@@ -1,15 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <div id="app">
+    <NavbaR />
+    <JumbotroN/>
+    <CTA/>
+    <CardS/>
+    <FooteR/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavbaR from './components/NavbaR.vue'
+import JumbotroN from './components/JumbotroN.vue'
+import CTA from './components/CTA.vue'
+import CardS from "@/components/CardS";
+import FooteR from "@/components/FooteR";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    FooteR,
+    CardS,
+    NavbaR,
+    JumbotroN,
+    CTA
   }
 }
 </script>
@@ -21,6 +35,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+
 }
 </style>
